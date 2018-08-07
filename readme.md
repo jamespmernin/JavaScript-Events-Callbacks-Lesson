@@ -184,7 +184,7 @@ Note that we're passing a *reference* to `getPaid` in to `doWork`.
 
 > 5 minutes exercise. 5 minutes review.
 
-Go to this [repository](../../event-listener-practice) and follow the instructions.
+Go to this [repository](https://git.generalassemb.ly/ga-wdi-exercises/event-listener-practice) and follow the instructions.
 
 ## Break (10 minutes / 0:55)
 
