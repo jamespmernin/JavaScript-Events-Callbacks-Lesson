@@ -16,7 +16,7 @@
 * Pass a named function as a callback to **another** function
 * Pass an anonymous function as a callback to another function
 
-## Framing (5 minutes / 0:05)
+## Framing
 
 So far, we have needed to use the REPL in the browser console to interact with our programs. This is asking a bit much of our users. Instead we would like to write code to respond to user interactions with the webpage.
 
@@ -24,7 +24,7 @@ The **DOM** not only lets us manipulate the document (or webpage) using JavaScri
 
 We can **listen** for certain kinds of user-driven events, such as clicking a button, entering data into a form, keypresses and many, many more.
 
-## Events (5 minutes / 0:10)
+## Events
 
 - In plain English, what is an event?
 - What might an event in the context of a web page be?
@@ -39,7 +39,7 @@ We instead will prefer to keep JavaScript out of HTML files and use JS to target
 
 For the time being, when we talk about "interesting things that have taken place" we are talking about user interactions with the page.
 
-### Types of Events (5 minutes / 0:15)
+### Types of Events
 
 There are many events that we can listen for and respond to in JavaScript. Broadly speaking, we can divide these events in to four categories:
 
@@ -69,7 +69,7 @@ There are many events that we can listen for and respond to in JavaScript. Broad
 - change
 - focus
 
-### Setting Up An Event Listener (15 minutes / 0:30)
+### Setting Up An Event Listener
 
 Now that we have an idea of what DOM events are in theory, let's wire up our code and begin interacting with them. There are two steps to working with events: (1) Listening for an event and (2) Responding to an event.
 
@@ -129,7 +129,7 @@ button.addEventListener('click', function() {
 
 The code above first gets an element from the DOM. It then attaches an event listener to that `button` element with the `addEventListener()` method. The `addEventListener()` method takes two arguments: (1) the event we want to listen for and (2) the function that should be called whenever that event is invoked. In the case of the code above, we're saying we want to listen for `click` events on our `button`, and whenever someone does click on our button, call the `handleClickEvent()` function.
 
-## Aside: Callbacks -  Calling vs. Referencing (5 minutes / 0:35)
+## Aside: Callbacks -  Calling vs. Referencing
 
 As a quick aside, let's answer the question, "What is a callback function?"
 
@@ -180,28 +180,25 @@ Note that we're passing a *reference* to `getPaid` in to `doWork`.
 	It will be invoked inside of `doWork`, at the very end of that functions' process or work. 
 </details>
 
-## You Do: Practice (10 minutes / 0:45)
+## You Do: Practice
 
 > 5 minutes exercise. 5 minutes review.
 
-Go to this [repository](https://git.generalassemb.ly/ga-wdi-exercises/event-listener-practice) and follow the instructions.
+Go to this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/event-listener-practice) and follow the instructions.
 
-## Break (10 minutes / 0:55)
 
-## We Do: Color Scheme Switcher (15 min / 1:10)
-
-10 min practice / 5 min review
+## We Do: Color Scheme Switcher
  
  > We will build on the Color Scheme Switcher as we work through the following sections of the lesson.
  
- Visit this [repository](https://git.generalassemb.ly/ga-wdi-exercises/color-scheme-switcher) and follow along!
+ Visit this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/color-scheme-switcher) and follow along!
 
-## The Event Object (10 min / 1:20)
+## The Event Object
 
 Comment out the code you just did in the Color Scheme Switcher exercise and put the following...
 
 ```js
-var buttons = document.querySelector('li a')
+let buttons = document.querySelector('li a')
     
 buttons.addEventListener('click', handleClickEvent)
 
@@ -215,7 +212,7 @@ The `evt` stands for `event`.
 
 > The reason we're not actually using `event` is that it's a "reserved word" in Javascript, like "if" and "return".
 
-### Explore The Event Object (5 min / 1:25)
+### Explore The Event Object
 
 Open up your event listener practice exercise and modify your event handler to accept the event object as a parameter. Then print it to the console.
 
@@ -225,7 +222,7 @@ With your partner, spend three minutes clicking the button and exploring what pr
 * A way to tell the position of the mouse when it was clicked.
 * One other piece of useful or interesting information.
 
-### Preventing Default Behavior (5 min / 1:30)
+### Preventing Default Behavior
 
 The event object is useful to us as programmers for many reasons - one of those reasons is preventing the default browser behavior for a certain event. 
 
@@ -242,7 +239,7 @@ To prevent the default behavior, we have a special method inside the event objec
 	<summary> Answer </summary>
 	
 ```js
-var button = document.querySelector('.js-button');
+let button = document.querySelector('.js-button');
 
 button.addEventListener("click", handleClickEvent);
 
@@ -255,7 +252,7 @@ function handleClickEvent ( evt ){
 
 </details>
 
-### Event Propagation (15 min / 1:45)
+### Event Propagation
 
 Given the following scenario and what we've learned about events so far, what would you do?
 
@@ -275,17 +272,16 @@ Going back to our example with the `<nav>` element containing links: Given event
 
 To trigger specific outcomes for each event target child element, you can use a conditional (if/else) or switch statement to invoke the intended function for each the event target.
 
-### We do: Refactor Color Switcher (10 min / 1:55)
+### We do: Refactor Color Switcher
 
 Let's revisit the color switcher example together and find a way to put have just one event listener.
 
-## Break (10 minutes / 2:05)
 
-## We Do: DOTS: The Game (25 minutes / 2:30)
+## We Do: DOTS: The Game
 
-Visit this [repository](https://git.generalassemb.ly/ga-wdi-exercises/event-listener-demo) and follow the instructions.
+Visit this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/event-listener-demo) and follow the instructions.
 
-## Homework: [Pixart](https://git.generalassemb.ly/ga-wdi-exercises/pixart_js)
+## Homework: [Pixart](https://git.generalassemb.ly/wdi-nyc-terabyte/pixart_js)
 
 ## Additional Reading
 - [Build a Drum Kit in Vanilla JS](https://www.youtube.com/watch?v=VuN8qwZoego)
