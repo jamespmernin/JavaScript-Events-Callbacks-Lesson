@@ -102,7 +102,7 @@ That completes step 1 of working with events - we're now listening for a click e
 For step two, we need to define the function that will be called whenever this event is emitted. This is just a function, but it has a special name due to how it's being used: a **callback** function: 
 
 ```js
-function handleClickEvent(){
+const handleClickEvent = function(){
   console.log('I was clicked!')
 }
 ```
@@ -113,7 +113,7 @@ All together, our code looks like this:
 const button = document.querySelector('.js-button')
 button.addEventListener('click', handleClickEvent)
 
-function handleClickEvent(){
+const handleClickEvent = function(){
   console.log('I was clicked!')
 }
 ```
@@ -153,7 +153,7 @@ This is where callbacks come in!
 We can imagine the implementation of `doWork` as looking something like this:
 
 ```js
-function doWork( callback ) {
+const doWork = function( callback ) {
 
 	// code for whatever it is that takes so long ...
 	
@@ -182,7 +182,6 @@ Note that we're passing a *reference* to `getPaid` in to `doWork`.
 
 ## You Do: Practice
 
-> 5 minutes exercise. 5 minutes review.
 
 Go to this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/event-listener-practice) and follow the instructions.
 
@@ -202,7 +201,7 @@ let buttons = document.querySelector('li a')
     
 buttons.addEventListener('click', handleClickEvent)
 
-function handleClickEvent (evt) {
+const handleClickEvent = function(evt) {
     console.log('I was clicked!')
     console.log(evt)
 }
@@ -243,8 +242,8 @@ let button = document.querySelector('.js-button');
 
 button.addEventListener("click", handleClickEvent);
 
-function handleClickEvent ( evt ){
-	evt.preventDefault();
+const handleClickEvent = function( evt ){
+  evt.preventDefault();
   console.log("I was clicked!")
   console.log(evt)
 }
