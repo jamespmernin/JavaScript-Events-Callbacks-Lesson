@@ -172,13 +172,13 @@ Note that we're passing a *reference* to `getPaid` in to `doWork`.
 	It will be invoked inside of `doWork`, at the very end of that functions' process or work. 
 </details>
 
-## You Do: Practice
+## Practice
 
 
 Go to this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/event-listener-practice) and follow the instructions.
 
 
-## We Do: Color Scheme Switcher
+## Color Scheme Switcher
  
  > We will build on the Color Scheme Switcher as we work through the following sections of the lesson.
  
@@ -198,10 +198,6 @@ const handleClickEvent = function(evt) {
     console.log(evt)
 }
 ```
-
-The `evt` stands for `event`.
-
-> The reason we're not actually using `event` is that it's a "reserved word" in Javascript, like "if" and "return".
 
 ### Explore The Event Object
 
