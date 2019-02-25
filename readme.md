@@ -16,14 +16,6 @@
 * Pass a named function as a callback to **another** function
 * Pass an anonymous function as a callback to another function
 
-## Framing
-
-So far, we have needed to use the REPL in the browser console to interact with our programs. This is asking a bit much of our users. Instead we would like to write code to respond to user interactions with the webpage.
-
-The **DOM** not only lets us manipulate the document (or webpage) using JavaScript, but also gives us the ability to write JavaScript that responds to interactions with the page. These interactions are communicated as **events**.
-
-We can **listen** for certain kinds of user-driven events, such as clicking a button, entering data into a form, keypresses and many, many more.
-
 ## Events
 
 - In plain English, what is an event?
