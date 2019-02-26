@@ -239,27 +239,8 @@ const handleClickEvent = function( evt ){
 
 </details>
 
-### Event Propagation
 
-Given the following scenario and what we've learned about events so far, what would you do?
-
-> You have a `<nav>` element that contains an unordered list with links in the header of your website. This `<nav>` serves as the primary navigation. Whenever the user clicks on one of these links however, you want to run some code and update the page with JavaScript. How would you attach and event to each link in the list?
-
-One way to go about this is to set an individual event listener on each link, as we did in the color switcher example above.
-
-Another way to go about this is to take advantage of event propagation. There are three phases of **event propagation**: capture phase, target phase, and bubbling phase. 
-
-When an event (e.g. click) occurs, all nodes up the DOM tree are notified, beginning at the window level and working its way down the DOM branch to the event target. This is the capture phase. Once the propagation reaches the event target, all event listeners on the target will be triggered. Then, event propagation continues back up the DOM tree in the event bubbling phase. All three of these phases are very nearly instantaneous.
-
-For a visual, consider the event propagation flow phase illustration below.
-
-![Event Propagation Flow Chart (from World Wide Web Consortium)](./event-propagation-flow.png)
-
-Going back to our example with the `<nav>` element containing links: Given event propagation, you can put an event listener on the `<nav>` element. When a click event occurs on each child `<a>`, the event will propagate up through all parent elements of that `<a>` element, including the `<nav>` element. Thus, the event listener on the `<nav>` element will be triggered.
-
-To trigger specific outcomes for each event target child element, you can use a conditional (if/else) or switch statement to invoke the intended function for each the event target.
-
-### We do: Refactor Color Switcher
+### Refactor Color Switcher
 
 Let's revisit the color switcher example together and find a way to put have just one event listener.
 
