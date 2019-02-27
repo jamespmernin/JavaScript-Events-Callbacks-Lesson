@@ -103,11 +103,12 @@ All together, our code looks like this:
 
 ```js
 const button = document.querySelector('.js-button')
-button.addEventListener('click', handleClickEvent)
 
 const handleClickEvent = function(){
   console.log('I was clicked!')
 }
+
+button.addEventListener('click', handleClickEvent)
 ```
 
 Or we could use an anonymous callback function:
@@ -190,13 +191,13 @@ Comment out the code you just did in the Color Scheme Switcher exercise and put 
 
 ```js
 let buttons = document.querySelector('li a')
-    
-buttons.addEventListener('click', handleClickEvent)
 
 const handleClickEvent = function(evt) {
     console.log('I was clicked!')
     console.log(evt)
 }
+
+buttons.addEventListener('click', handleClickEvent)
 ```
 
 ### Explore The Event Object
