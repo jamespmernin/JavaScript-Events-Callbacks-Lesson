@@ -176,14 +176,14 @@ Note that we're passing a *reference* to `getPaid` in to `doWork`.
 ## Practice
 
 
-Go to this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/event-listener-practice) and follow the instructions.
+Go to this [repository](https://git.generalassemb.ly/sei-nyc-dinosaurs/event-listener-practice) and follow the instructions.
 
 
 ## Color Scheme Switcher
  
  > We will build on the Color Scheme Switcher as we work through the following sections of the lesson.
  
- Visit this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/color-scheme-switcher) and follow along!
+ Visit this [repository](https://git.generalassemb.ly/sei-nyc-dinosaurs/color-scheme-switcher) and follow along!
 
 ## The Event Object
 
@@ -248,9 +248,9 @@ Let's revisit the color switcher example together and find a way to put have jus
 
 ## We Do: DOTS: The Game
 
-Visit this [repository](https://git.generalassemb.ly/wdi-nyc-terabyte/event-listener-demo) and follow the instructions.
+Visit this [repository](https://git.generalassemb.ly/sei-nyc-dinosaurs/event-listener-demo) and follow the instructions.
 
-## Homework: [Pixart](https://git.generalassemb.ly/wdi-nyc-terabyte/pixart_js)
+## Extra Practice: [Pixart](https://git.generalassemb.ly/sei-nyc-dinosaurs/pixart_js)
 
 ## Additional Reading
 - [Build a Drum Kit in Vanilla JS](https://www.youtube.com/watch?v=VuN8qwZoego)
