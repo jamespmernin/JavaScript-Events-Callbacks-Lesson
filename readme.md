@@ -59,7 +59,10 @@ There are many events that we can listen for and respond to in JavaScript. Broad
 
 ### Setting Up An Event Listener
 
-Now that we have an idea of what DOM events are in theory, let's wire up our code and begin interacting with them. There are two steps to working with events: (1) Listening for an event and (2) Responding to an event.
+Now that we have an idea of what DOM events are in theory, let's wire up our code and begin interacting with them. There are two steps to working with events:
+
+1. Listening for an event and 
+2. Responding to an event.
 
 In order to listen for an event, we need to define an **event listener**. Below you'll find a simple event listener associated with a `'click'` event on a `button` element.
 
@@ -87,7 +90,7 @@ button.addEventListener('click', handleClickEvent)
 
 That completes step 1 of working with events - we're now listening for a click event on our button!
 
-For step two, we need to define the function that will be called whenever this event is emitted. This is just a function, but it has a special name due to how it's being used: a **callback** function: 
+For step two, we need to define the function that will be called whenever this event occurs. This is just a function, but it has a special name due to how it's being used: a **callback** function: 
 
 ```js
 const handleClickEvent = function(){
@@ -116,7 +119,11 @@ button.addEventListener('click', function() {
 })
 ```
 
-The code above first gets an element from the DOM. It then attaches an event listener to that `button` element with the `addEventListener()` method. The `addEventListener()` method takes two arguments: (1) the event we want to listen for and (2) the function that should be called whenever that event is invoked. In the case of the code above, we're saying we want to listen for `click` events on our `button`, and whenever someone does click on our button, call the `handleClickEvent()` function.
+The code above first gets an element from the DOM. It then attaches an event listener to that `button` element with the `addEventListener()` method. The `addEventListener()` method takes two arguments: 
+1. the event we want to listen for and 
+2. the function that should be called whenever that event is invoked. 
+
+In the case of the code above, we're saying we want to listen for `click` events on our `button`, and whenever someone does click on our button, call the `handleClickEvent()` function.
 
 ## Aside: Callbacks -  Calling vs. Referencing
 
@@ -170,8 +177,6 @@ Note that we're passing a *reference* to `getPaid` in to `doWork`.
 </details>
 
 ## Practice
-
-
 Go to this [repository](https://git.generalassemb.ly/sei-nyc-dinosaurs/event-listener-practice) and follow the instructions.
 
 
