@@ -17,17 +17,13 @@
 * Pass an anonymous function as a callback to another function
 
 ## Events
+"DOM Events are sent to notify code of interesting things that have taken place." _- MDN_
 
 - In plain English, what is an event?
 - What might an event in the context of a web page be?
 - What are some specific examples of common DOM events?
 
-> You can find information on events and examples at [W3Schools Events](https://www.w3schools.com/js/js_events.asp), [W3Schools DOM Events](https://www.w3schools.com/js/js_htmldom_events.asp), and [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/Events).
-
-> Note: W3 schools introduces events with JavaScript written into attributes.
-We instead will prefer to keep JavaScript out of HTML files and use JS to target elements from the DOM and attach [event listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp).
-
-"DOM Events are sent to notify code of interesting things that have taken place." _- MDN_
+> You can find information on events and examples on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/Events).
 
 For the time being, when we talk about "interesting things that have taken place" we are talking about user interactions with the page.
 
