@@ -249,9 +249,9 @@ Let's revisit the color switcher example together and find a way to put have jus
 
 ## We Do: DOTS: The Game
 
-Visit this [repository](https://git.generalassemb.ly/sei-nyc-dinosaurs/event-listener-demo) and follow the instructions.
+Visit this [repository](https://git.generalassemb.ly/sei-nyc-cheetahs/event-listener-demo) and follow the instructions.
 
-## Extra Practice: [Pixart](https://git.generalassemb.ly/sei-nyc-dinosaurs/pixart_js)
+## Extra Practice: [Pixart](https://git.generalassemb.ly/sei-nyc-cheetahs/pixart_js)
 
 ## Additional Reading
 - [Build a Drum Kit in Vanilla JS](https://www.youtube.com/watch?v=VuN8qwZoego)
