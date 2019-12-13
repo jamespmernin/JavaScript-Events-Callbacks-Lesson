@@ -61,8 +61,8 @@ There are many events that we can listen for and respond to in JavaScript. Broad
 
 Now that we have an idea of what DOM events are in theory, let's wire up our code and begin interacting with them. There are two steps to working with events:
 
-1. Listening for an event and 
-2. Responding to an event.
+1. Listening for an event 
+2. Responding to an event
 
 In order to listen for an event, we need to define an **event listener**. Below you'll find a simple event listener associated with a `'click'` event on a `button` element.
 
