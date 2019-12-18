@@ -177,14 +177,13 @@ Note that we're passing a *reference* to `getPaid` in to `doWork`.
 </details>
 
 ## Practice
-Go to this [repository](https://git.generalassemb.ly/sei-nyc-cheetahs/event-listener-practice) and follow the instructions.
+Go to this to the `color-scheme-switcher` directory (in this repo) and follow the instructions.
 
 
 ## Color Scheme Switcher
  
  > We will build on the Color Scheme Switcher as we work through the following sections of the lesson.
- 
- Visit this [repository](https://git.generalassemb.ly/sei-nyc-cheetahs/color-scheme-switcher) and follow along!
+
 
 ## The Event Object
 
